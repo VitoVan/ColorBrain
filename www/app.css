@@ -1,0 +1,119 @@
+body{
+	font-family:"Microsoft YaHei","微软雅黑", Helvetica, Tahoma, Arial , sans-serif ! important;
+	padding:0;
+	margin:0;
+}
+.container{
+	background-color:#EEE;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	min-width: 600px;
+}
+.color-block{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	z-index: 9999;
+	margin: 10px auto;
+}
+.chooser-block{
+	width: 500px;
+	margin: auto;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	padding: 10px;
+	text-align: center;
+}
+.chooser-block>span{
+	margin: 0px 10px;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 10%;
+	font-weight: bold;
+}
+.chooser-block>span:hover{
+	text-shadow: -0.5px 0.4px whitesmoke;
+	box-shadow: 1px 1px black;
+}
+.chooser-block>span.choosed{
+	border-color: white;
+	border-style: dotted;
+	border-width: 4px;
+	border-radius: 50%;
+}
+.red{
+	background-color: red;
+	color: white;
+}
+.orange{
+	background-color: orange;
+}
+.yellow{
+	background-color: yellow;
+}
+.green{
+	background-color: green;
+	color: white;
+}
+.cyan{
+	background-color: cyan;
+}
+.blue{
+	background-color: blue;
+	color: white;
+}
+.purple{
+	background-color: purple;
+	color: white;
+}
+.btn-train{
+	display:none;
+	text-align: center;
+	margin: 20px auto;
+	width: 200px;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.btn-train:hover{
+	font-weight:bold;
+	text-shadow: 1px 1px white;
+}
+.btn-test{
+	display:none;
+	text-align: center;
+	margin: 20px auto;
+	width: 200px;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.btn-test:hover{
+	font-weight:bold;
+	text-shadow: 1px 1px white;
+}
+.progress-box{
+	display: none;
+	text-align: center;
+	margin: 20px auto;
+	width: 500px;
+	background-color: black;
+	color: white;
+	padding: 2px;
+	border-radius: 10px;
+}
+.progress-completed{
+	width: 0;
+	height: 5px;
+	background-color: white;
+	z-index: 9999;
+	border-radius: 10px;
+	margin: 4px 0px;
+}
