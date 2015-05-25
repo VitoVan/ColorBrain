@@ -48,6 +48,7 @@ var trainer= {
 		// show the "Train network" button after we've selected a few entries
 		if (this.data.length == 20) {
 			$(".btn-train").show();
+			$('.message').text('you can keep teaching or click the TRAIN button, the more you teach, more clever it will be.');
 		}
 	},
 	changeColor: function() {
@@ -87,7 +88,7 @@ var trainer= {
 		console.log("error training network: ", event.message);
 	},
 	showProgress: function(progress) {
-		var completed = progress.iterations / trainer.iterations * 100;
+		var completed = progress.iterations / 9000 * 100;
 		$(".progress-completed").css("width", completed + "%");
 	}
 };
