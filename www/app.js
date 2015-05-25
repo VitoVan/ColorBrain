@@ -2,6 +2,7 @@ $(document).ready(function(){
 	trainer.changeColor();
 	$('.chooser-block>span').click(function(){
 		trainer.pickColor($(this).attr('class').trim());
+		$(this).attr('touched','touched')
 	});
 	$('.btn-train').click(function(){
 		trainer.trainNetwork();
@@ -97,7 +98,9 @@ var tester= {
 		runNetwork.name= "runNetwork"; // for view code later
 		$('.chooser-block').css('pointer-events','none');
 		$('.chooser-block').show();
+		$('.chooser-block>span:not([touched="touched"])').hide();
 		$('.btn-test').show();
+		this.testRandom();
 	},
 	testRandom: function() {
 		this.testColor(utils.randomColor());
